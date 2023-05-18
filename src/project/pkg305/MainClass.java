@@ -18,7 +18,11 @@ public class MainClass {
     public static void main(String[] args) throws FileNotFoundException {
  
         Readfile(); //read from file
-        Scanner input = new Scanner(System.in);
+        LoginInterface login = new LoginInterface();
+        login.setVisible(true);
+        login.pack();
+        login.setLocationRelativeTo(null);
+        /*Scanner input = new Scanner(System.in);
         Scanner input2 = new Scanner(System.in);
         
         while (true) {
@@ -135,7 +139,7 @@ public class MainClass {
 
             }
 
-        }
+        }*/
     }
 
     //this method will display the menu for the user and run choosen function
